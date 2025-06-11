@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D08692E-B758-42E0-A341-CB5B95A1AF93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ОЖС_game</RootNamespace>
+    <AssemblyName>ОЖС game</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cards.Designer.cs">
+      <DependentUpon>Cards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collection.Designer.cs">
+      <DependentUpon>Collection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionP2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollectionP2.Designer.cs">
+      <DependentUpon>CollectionP2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionP3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollectionP3.Designer.cs">
+      <DependentUpon>CollectionP3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Market.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Market.Designer.cs">
+      <DependentUpon>Market.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilofPers.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cards.resx">
+      <DependentUpon>Cards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collection.resx">
+      <DependentUpon>Collection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionP2.resx">
+      <DependentUpon>CollectionP2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionP3.resx">
+      <DependentUpon>CollectionP3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Market.resx">
+      <DependentUpon>Market.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Макс\База%28Max%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Макс\Больной на голову%28Макс%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Макс\Ограничение скорости%28Макс%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Артём\Детка забудь меня%28Тёма%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Артём\На стиле%28Артём%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Артём\Соная бабака%28Тёма%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Артём\АУФ%28Тёма%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Даня\Муж %28Даня%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Даня\Типикал%28Даня%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Даня\Зелье оли%28Даня%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Даня\Карл%28Даня%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Оля\Вооружен и опасен%28Оля%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Оля\Милий%28Оля%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Оля\Чиловый художник%28Оля%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Юля\Химик стаил%28Юля%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Юля\Добри утро%28Юля%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Юля\ОСУ%28Юля%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Юля\Ням%28Юля%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Ника\Милий застенчевый%28Ника%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Ника\На стиле%28Ника%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Ника\Опасний добри %28Ника%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Ника\Удивленая мис х %28Ника%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Олег\без комментариев%28Олег%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Олег\На стиле%28Олег%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\character\Олег\Стандартный квас%28Олег%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
